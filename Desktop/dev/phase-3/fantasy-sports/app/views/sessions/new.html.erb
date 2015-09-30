@@ -1,0 +1,12 @@
+<div class='container login'>
+
+<h1 class="label label-primary">Login</h1>
+
+<%= form_tag '/login' do %>
+
+  <span class="label label-info">Username:</span> <%= text_field_tag :username %>
+  <span class="label label-info">Password:</span> <%= password_field_tag :password %>
+  <%= submit_tag "Submit" %>
+
+<% end %>
+</div>
