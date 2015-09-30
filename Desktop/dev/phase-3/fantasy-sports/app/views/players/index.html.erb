@@ -1,0 +1,22 @@
+
+
+<div class='container'>
+<h1>Add Player</h1>
+
+<%= form_for :player, url: '/users/:user_id/players' do |f| %>
+
+  <div class="input-group">
+  first name: <%= f.text_field :first_name, class: "form-control" %>
+  </div>
+  <div class="input-group">
+  last name: <%= f.text_field :last_name, class: "form-control" %>
+  </div>
+  <div class="input-group">
+  sport: <%= f.text_field :sport, class: "form-control" %>
+  </div>
+  <%= f.submit "Submit", class: "btn btn-default" %>
+
+
+
+<% end %>
+</div>

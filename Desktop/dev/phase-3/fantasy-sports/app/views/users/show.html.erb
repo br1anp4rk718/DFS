@@ -1,0 +1,25 @@
+<p>
+  <strong>username:</strong>
+  <%= @user.username %>
+</p>
+ 
+ <div class='container'>
+<h2>Players</h2>
+<% @user.players.each do |player| %>
+  <p>
+    <strong>Name:</strong>
+    <a href="/users/:user_id/players/:player_id"><%= player.first_name %> <%= player.last_name %></a>
+  </p>
+ 
+  <p>
+    <strong>Sport:</strong>
+    <%= player.sport %>
+  </p>
+<% end %>
+ 
+
+ 
+<%= link_to 'Edit', edit_user_path(@user) %> <br><br>
+<a href='/users/:user_id/players'>Add more players</a>
+
+</div>

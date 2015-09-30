@@ -1,4 +1,9 @@
 class UsersController < ApplicationController
+  
+  def index
+    redirect_to 'players/index'
+  end
+
   def new
   end
 
@@ -10,6 +15,10 @@ class UsersController < ApplicationController
   	else
   		redirect_to '/signup'
   	end
+  end
+
+  def show
+    @user = User.find(params[:id])
   end
 
   private

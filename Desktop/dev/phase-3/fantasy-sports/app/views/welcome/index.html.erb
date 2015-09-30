@@ -1,2 +1,9 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div class='container'>
+<div class="jumbotron">
+  <h1>Welcome back <%= @current_user.username %>!</h1>
+  <br><br>
+  <p><a class="btn btn-primary btn-lg" href="/users/:user_id/players" role="button">Speed up your fantasy sports update now!</a></p>
+</div>
+</div>
+
+
