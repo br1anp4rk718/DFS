@@ -1,9 +1,10 @@
+<div class='container login'>
 <p>
   <strong>username:</strong>
   <%= @user.username %>
 </p>
- 
- <div class='container'>
+</div>
+ <div class='container login'>
 <h2>Players</h2>
 <% @user.players.each do |player| %>
   <p>
@@ -16,7 +17,7 @@
     <%= player.sport %>
   </p>
 <% end %>
- 
+<br><br>
 
  
 <%= link_to 'Edit', edit_user_path(@user) %> <br><br>

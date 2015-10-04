@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20150930022944) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "sport"
+    t.integer  "rotoid"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

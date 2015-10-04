@@ -6,10 +6,9 @@ class PlayersController < ApplicationController
 	end
 
 	def show
-		
 		@user = User.find(session[:user_id])
-		@player = Player.all
-	
+		@player = Player.find(2)# session[:user_id])
+		# render user_path(@user)
 	end
 
 	def new
